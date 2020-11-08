@@ -4,8 +4,22 @@ module.exports = {
     [
       'babel-plugin-styled-components',
       {
-        ssr: false
+        ssr: true,
+        displayName: true
       }
     ]
-  ]
+  ],
+  env: {
+    test: {
+      plugins: [
+        [
+          'babel-plugin-styled-components',
+          {
+            ssr: false,
+            displayName: false
+          }
+        ]
+      ]
+    }
+  }
 }
