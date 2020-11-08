@@ -1,9 +1,9 @@
 import React from 'react'
 
-// import { Container } from './styles';
+import Main from 'components/Main'
 
 const App: React.FC = () => {
-  return <div>Olá Mundo...</div>
+  return <Main />
 }
 
 export default App
